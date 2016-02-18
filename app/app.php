@@ -26,6 +26,12 @@
         return $app['twig']->render('home.html.twig');
     });
 
+    $app->post("/results", function() use ($app) {
+        $newScrabbleScore = new ScrabbleScore;
+        $result = $newScrabbleScore->scrabble_score($_POST['input_word']);
+        return $app['twig']->render('home.html.twig', array('result' => $result));
+    });
+
     return $app;
 
 ?>

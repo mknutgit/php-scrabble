@@ -17,9 +17,9 @@
       <div class='row'>
         <div class='col-sm-6'>
           <h2>Enter a word, brah!</h2>
-          <form action='/userInput'>
+          <form action='/results' method='post'>
             <div class='form-group'>
-              <label for='input_word'>Number</label>
+              <label for='input_word'>Word:</label>
               <input id='input_word' name='input_word' type='text'>
             </div>
             <button class='btn btn-warning' type='submit'>Submit!</button>
@@ -31,11 +31,10 @@
   <!-- Row: 2 -->
       <div class="row">
           <div class="col-sm-6">
-                <ul>
-                    <!-- {% for result in results %}
-                        <li>{{ result }}</li>
-                    {% endfor %} -->
-                </ul>
+
+            <h1>Your Scrabble score is:</h1>
+            <h4>{{ result }}</h4>
+
 
           </div><!--col-sm-6-->
       </div><!--row-->
