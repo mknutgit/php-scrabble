@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>EXAMPLE</title>
+    </head>
+
+        <body>
+          <div class='container'>
+            <div class='jumbotron'>
+              <h1>EXAMPLE</h1>
+              <p><em>You can't ping without your pong</em></p>
+            </div>  <!-- /JUMBOTRON -->
+
+        <!-- Row: 1 -->
+            <div class='row'>
+              <div class='col-sm-6'>
+                  <h2>Enter a number, brah!</h2>
+                  <form action='/userInput'>
+                      <div class='form-group'>
+                        <label for='number'>Number</label>
+                        <input id='number' name='number' type='number'>
+                      </div>
+                      <button class='btn btn-warning' type='submit'>Submit!</button>
+                </form>
+            </div>  <!-- /col-sm-6 -->
+          </div>  <!-- /Row -->
+
+<!-- Results ------------>
+        <!-- Row: 2 -->
+          <div class="row">
+              <div class="col-sm-6">
+                    <ul>
+                        <!-- {% for result in results %}
+                            <li>{{ result }}</li>
+                        {% endfor %} -->
+                    </ul>
+
+              </div><!--col-sm-6-->
+          </div><!--row-->
+      </div>  <!-- /Container  -->
+
+
+
+
+
+
+
+
+
+        </body>
+</html>
