@@ -28,7 +28,7 @@
         function test_mixedPointValueWords() {
 
           $test_mixedPointValueWords = new ScrabbleScore;
-          $input = "map";
+          $input = "MAP";
 
           $result = $test_mixedPointValueWords->scrabble_score($input);
 
